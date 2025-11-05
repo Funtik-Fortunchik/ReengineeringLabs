@@ -119,7 +119,7 @@ namespace NetSdrClientApp.Networking
                 }
                 catch (OperationCanceledException ex)
                 {
-                    //empty
+                    Console.WriteLine($"Error in listening loop: {ex.Message}");
                 }
                 catch (Exception ex)
                 {
