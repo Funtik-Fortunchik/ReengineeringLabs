@@ -3,7 +3,6 @@ using NUnit.Framework;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using EchoServer; // ? Заборонено
 
 namespace NetSdrClientAppTests
 {
