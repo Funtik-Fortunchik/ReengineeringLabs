@@ -1,12 +1,12 @@
 # Лабораторні з реінжинірингу (8×)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Funtik-Fortunchik_NetSdrClient&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Funtik-Fortunchik_NetSdrClient)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Funtik-Fortunchik_NetSdrClient&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Funtik-Fortunchik_NetSdrClient)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Funtik-Fortunchik_NetSdrClient&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Funtik-Fortunchik_NetSdrClient)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Funtik-Fortunchik_NetSdrClient&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Funtik-Fortunchik_NetSdrClient)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Funtik-Fortunchik_NetSdrClient&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Funtik-Fortunchik_NetSdrClient)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Funtik-Fortunchik_NetSdrClient&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Funtik-Fortunchik_NetSdrClient)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Funtik-Fortunchik_NetSdrClient&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Funtik-Fortunchik_NetSdrClient)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Funtik-Fortunchik_NetSdrClient&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Funtik-Fortunchik_NetSdrClient)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=funtik-fortunchik_NetSdrClient&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=funtik-fortunchik_NetSdrClient)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=funtik-fortunchik_NetSdrClient&metric=coverage)](https://sonarcloud.io/summary/new_code?id=funtik-fortunchik_NetSdrClient)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=funtik-fortunchik_NetSdrClient&metric=bugs)](https://sonarcloud.io/summary/new_code?id=funtik-fortunchik_NetSdrClient)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=funtik-fortunchik_NetSdrClient&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=funtik-fortunchik_NetSdrClient)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=funtik-fortunchik_NetSdrClient&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=funtik-fortunchik_NetSdrClient)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=funtik-fortunchik_NetSdrClient&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=funtik-fortunchik_NetSdrClient)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=funtik-fortunchik_NetSdrClient&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=funtik-fortunchik_NetSdrClient)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=funtik-fortunchik_NetSdrClient&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=funtik-fortunchik_NetSdrClient)
 
 
 Цей репозиторій використовується для курсу **реінжиніринг ПЗ**. 
