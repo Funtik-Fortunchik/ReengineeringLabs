@@ -1,0 +1,48 @@
+using NUnit.Framework;
+using EchoServer;
+using System.Net.Sockets;
+using System.Net;
+using System.Threading.Tasks;
+
+namespace EchoServerTests
+{
+    public class UdpTimedSenderTests
+    {
+        [Test]
+        public void Sender_Start_Stop_Should_Not_Throw()
+        {
+            var sender = new UdpTimedSender("127.0.0.1", 60010);
+
+            Assert.DoesNotThrow(() =>
+            {
+                sender.StartSending(200);
+                sender.StopSending();
+            });
+        }
+
+        [Test]
+        public void Sender_Should_Send_At_Least_One_Packet()
+        {
+            int port = 60020;
+            using var receiver = new UdpClient(port);
+            receiver.Client.ReceiveTimeout = 2000;
+
+            var sender = new UdpTimedSender("127.0.0.1", port);
+
+            sender.StartSending(300);
+
+            IPEndPoint endpoint = new IPEndPoint(IPAddress.Any, 0);
+            byte[] received = null;
+
+            Assert.DoesNotThrow(() =>
+            {
+                received = receiver.Receive(ref endpoint);
+            });
+
+            sender.StopSending();
+
+            Assert.IsNotNull(received);
+            Assert.Greater(received.Length, 0);
+        }
+    }
+}
