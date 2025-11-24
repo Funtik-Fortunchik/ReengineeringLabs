@@ -1,0 +1,55 @@
+using NUnit.Framework;
+using EchoServer;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace EchoServerTests
+{
+    public class EchoServerTests
+    {
+        [Test]
+        public async Task EchoServer_Should_Echo_Received_Message()
+        {
+            // Arrange
+            int port = 5055;
+            var server = new EchoServer.EchoServer(port);
+
+            // Запуск
+            var serverTask = Task.Run(() => server.StartAsync());
+            await Task.Delay(200); // Дати серверу стартувати
+
+            var client = new TcpClient();
+            await client.ConnectAsync("127.0.0.1", port);
+            var stream = client.GetStream();
+
+            string message = "test123";
+            byte[] msgData = Encoding.UTF8.GetBytes(message);
+
+            // Act
+            await stream.WriteAsync(msgData, 0, msgData.Length);
+
+            byte[] buffer = new byte[4096];
+            int count = await stream.ReadAsync(buffer, 0, buffer.Length);
+
+            string received = Encoding.UTF8.GetString(buffer, 0, count);
+
+            server.Stop();
+
+            // Assert
+            Assert.AreEqual(message, received);
+        }
+
+        [Test]
+        public void Server_Stop_Should_Not_Throw()
+        {
+            var server = new EchoServer.EchoServer(5060);
+
+            Assert.DoesNotThrow(() =>
+            {
+                server.Stop();
+            });
+        }
+    }
+}
